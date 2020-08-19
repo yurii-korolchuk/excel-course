@@ -77,7 +77,6 @@ module.exports = {
               reloadAll: true,
             },
           },
-          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
