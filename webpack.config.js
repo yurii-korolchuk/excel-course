@@ -16,12 +16,17 @@ const jsLoaders = () => {
         presets: [
           '@babel/preset-env',
         ],
+        plugins: [
+          '@babel/plugin-proposal-class-properties'
+        ]
       },
     },
   ]
 
   if (isDev) {
-    loader.push('eslint-loader')
+    loader.push({
+      loader: 'eslint-loader'
+    })
   }
 
   return loader
@@ -74,11 +79,11 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: isDev,
-              reloadAll: true,
-            },
+              reloadAll: true
+            }
           },
           'css-loader',
-          'sass-loader',
+          'sass-loader'
         ],
       },
       {

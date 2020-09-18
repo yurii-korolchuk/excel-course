@@ -8,9 +8,16 @@
   "rules": {
     "semi": "off",
     "arrow-parens": "off",
-    "max-len": "off",
+    "max-len": "warn",
     "require-jsdoc": "off",
-    "eol-last": "off"
+    "eol-last": "off",
+    "linebreak-style": "off",
+    "quotes": "warn",
+    "comma-dangle": "warn",
+    "indent": "off",
+    "operator-linebreak": "off",
+    "no-unused-vars": "warn",
+    "padded-blocks": "warn"
   },
   "extends": ["eslint:recommended", "google"]
 }
